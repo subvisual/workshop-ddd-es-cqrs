@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Initializing..."
+bin/backend eval "PPR.Release.migrate"
+
+echo "Starting app..."
+bin/backend start
